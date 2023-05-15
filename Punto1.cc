@@ -102,6 +102,11 @@ int main (int argc, char *argv[])
   //Archivo XML para NetAnim
   AnimationInterface anim("SOR2_dumbbell_topology_PUNTO_A.xml");
  
+  
+  pointToPointLeftLeaf.EnablePcapAll("myfirst1");
+  
+  pointToPointRightLeaf.EnablePcapAll("myfirst2");
+  
   //Configura la simulacion real
   Ipv4GlobalRoutingHelper::PopulateRoutingTables();
  
